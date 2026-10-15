@@ -96,7 +96,7 @@ p{max-width:62ch}
 .hero-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:clamp(24px,5vw,72px);margin-top:clamp(28px,4vw,48px);align-items:start}
 h1{font-size:clamp(2.3rem,7.4vw,6.1rem);line-height:1;letter-spacing:-.04em}
 h1 .l1{display:block}
-h1 .slab{display:inline-block;margin-top:.1em;background:var(--verde);color:#fff;padding:.04em .2em .1em;border-radius:.14em;transform:rotate(-1.6deg);transform-origin:left center;clip-path:inset(0 0 0 0)}
+h1 .slab{display:inline-block;white-space:nowrap;font-size:.78em;margin-top:.1em;background:var(--verde);color:#fff;padding:.04em .2em .1em;border-radius:.14em;transform:rotate(-1.6deg);transform-origin:left center;clip-path:inset(0 0 0 0)}
 .js .hero:not(.go) h1 .slab{clip-path:inset(0 100% 0 0)}
 .hero.go h1 .slab{animation:pintar .9s cubic-bezier(.7,0,.2,1) both}
 @keyframes pintar{from{clip-path:inset(0 100% 0 0)}to{clip-path:inset(0 0 0 0)}}
@@ -262,6 +262,7 @@ h1 .slab{display:inline-block;margin-top:.1em;background:var(--verde);color:#fff
   .nums div:nth-child(-n+2){border-bottom:3px solid var(--indigo)}
 }
 @media (max-width:760px){
+  h1 .slab{font-size:.64em}
   .hero-grid,.formato .wrap,.especialista .wrap,.contato .wrap,.conversa .intro{grid-template-columns:1fr}
   .indic{grid-template-columns:1fr}
   .dialogo{grid-template-columns:1fr}
